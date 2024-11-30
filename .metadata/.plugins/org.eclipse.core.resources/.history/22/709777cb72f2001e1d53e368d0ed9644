@@ -1,0 +1,28 @@
+package Practice_Ex;
+import java.util.*;
+
+
+public class Demo1 
+{
+	public static void main(String args[])
+	{
+		List<String> l = new ArrayList<>();
+		l.add("sbi");
+		l.add("tring");
+		l.add("Sanskruti");
+		
+		
+		Iterator<String> itr = l.iterator();
+		while(itr.hasNext())
+		{
+			String st = itr.next();
+			if(st.charAt(0)=="s")
+			{
+				l.remove(st);
+				System.out.println(st);
+			}
+		}
+		
+	}
+
+}
